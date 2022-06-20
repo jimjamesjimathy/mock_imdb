@@ -1,0 +1,78 @@
+@import '../../common/colors.scss';
+
+.movie-section {
+    height: 86vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 0;
+    color: $font-primary;
+    text-align: center;
+
+    .section-left {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex: 2;
+
+        h2 {
+            font-size: 5rem;
+            font-weight: 400;
+            letter-spacing:2px;
+        }
+
+        .movie-rating {
+            margin: 2% 0;
+            display: flex;
+            justify-content: center;
+
+            p {
+                margin: 0 3%;
+                font-size: 1.5rem;
+                color: $font-secondary;
+            }
+        }
+
+        .movie-plot {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 3%;
+            overflow: scroll;
+
+            h3 {
+                font-size: 1.45rem;
+                font-weight: 300;
+            }
+        }
+
+        .movie-info {
+            width: 95%;
+            display: flex;
+            justify-content: space-evenly;
+            
+            .pc {
+                color: $font-primary;
+            }
+
+            p {
+                color: $font-secondary;
+            }
+        }
+    }
+
+    .section-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        border-radius: 5px;
+        background-color: $secondary-color;
+
+        img {
+            height: 75%;
+            object-fit: cover;
+        }
+    }
+}
