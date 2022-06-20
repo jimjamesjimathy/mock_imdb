@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchAsyncMovies,  fetchAsyncShows } from '../../features/movies/movieSlice';
-import MyFace from '../../images/placeholder.png';
+import userImg from '../../images/placeholder.png';
 import './Header.scss';
 
 
@@ -31,7 +31,7 @@ export default function Header() {
         </div>
 
       <div className='user-image'>
-        <img src={MyFace} alt='user' />
+        <img src={userImg} alt='user' />
       </div>
     </div>
   )
